@@ -89,7 +89,7 @@ async def start_command(client: Client, message: Message):
             [
               [
                     InlineKeyboardButton("🔥 Join Backup Channel", callback_data = "https://t.me/AIO_Backup")
-              ]
+              ],
                 [
                     InlineKeyboardButton("😊 About Me", callback_data = "about"),
                     InlineKeyboardButton("🔒 Close", callback_data = "close")
