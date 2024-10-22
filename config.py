@@ -32,12 +32,12 @@ DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://FileSout:FileSout@cluster
 DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002413274195 -1002118318196 -1002355152618 -1002155454477"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002413274195"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
+START_MSG = os.environ.get("START_MESSAGE", "Hello {mention}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "5413708222").split()):
@@ -58,7 +58,7 @@ PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" e
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
-USER_REPLY_TEXT = "Hello {mention}! You're not my Senpai!!"
+USER_REPLY_TEXT = "Hello {first}! You're not my Senpai!!"
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(1250450587)
