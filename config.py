@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7582533317:AAEixocY0YM0ASbklhO_vGv_q9kdFgLMF9g")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7582533317:AAHXYrVgzAjP5zcoVpnY56PZ3BrfO1ZbH_s")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "28450765"))
@@ -37,7 +37,7 @@ FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002118318196"))
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {mention} 👋!\n\nm here to provide you short links to download 😄\n\© @AIO_Backup</b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {mention} 👋!\n\nI'm here to provide you short links to download 😄\n\n© @AIO_Backup</b>")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "5413708222 6024840983").split()):
